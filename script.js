@@ -141,3 +141,21 @@ tl.from('#footer h1 span',{
     duration :0.6,
     stagger :0.070
 })
+
+var elemC = document.querySelector("#elem-container")
+var fixed = document.querySelector("#fixed-image")
+elemC.addEventListener("mouseenter", function () {
+    fixed.style.display = "block"
+})
+elemC.addEventListener("mouseleave", function () {
+    fixed.style.display = "none"
+})
+
+var elems=document.querySelectorAll(".cont")
+elems.forEach(function(e){
+    e.addEventListener("mouseenter",function(){
+  var image = e.getAttribute("data-image")
+  console.log(image)
+   fixed.style.backgroundImage = `url(${image})`
+    })
+})

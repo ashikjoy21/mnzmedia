@@ -264,7 +264,8 @@ overflow: hidden;
     opacity: 0;
 }
 .message{
-    padding: 4vw 2.8vw;
+    padding: 0vw 0vw 0.2vw 0vw;
+    margin-top: 11vw;
 }
 .msg div p{
     font-size: 2vw;
@@ -310,7 +311,7 @@ overflow: hidden;
 }
 .page5{
     width: 100%;
-    min-height: 100vh;
+    min-height: 75vh;
     background-color: #FAF8F3;
 }
 
@@ -424,15 +425,18 @@ overflow: hidden;
     color: black;
 }
 .page6 {
-    height: 100vh;
+    min-height: 80vh;
     width: 100%;
-    z-index: -30;
-    /* background-color: #EFEAE3; */
+    /* z-index: -30; */
+    background-color: #FAF8F3;
+    padding-bottom: 20vw;
+    /* background-color: #FE320A; */
+    /* background: transparent; */
 }
 
 #footer {
     position: fixed;
-    height:90vh;
+    height: 80vh;
     width: 100%;
     background-color: #000;
     color: #fff;
@@ -442,11 +446,12 @@ overflow: hidden;
     /* align-items: flex-end; */
     justify-content: flex-end;
     flex-direction: column;
-    padding: 1vw 3vw;
+    padding: 1vw 0vw;
+    border-bottom: 1px solid white;
 }
 
-#footer h1 {
-    font-size: 23vw;
+#footer h2 {
+    font-size: 18vw;
     text-align: center;
 }
 /* 
@@ -458,8 +463,10 @@ overflow: hidden;
 
 #footer-bottom {
     border-top: 1px solid #dadada;
-    height: 10vh;
+    height: 5vh;
     width: 100%;
+    bottom: 0vw;
+    position: relative;
 }
 
 #full-scr {
@@ -480,3 +487,56 @@ overflow: hidden;
     border-bottom-right-radius: 20px;
 
 }
+
+#elem-container .cont{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    /* border-top: 1px solid #38383864; ; */
+    border-bottom: 1px solid #38383864;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 4vw;
+}
+#elem-container .cont h2{
+    font-size: 4.5vw;
+    font-weight: 600;
+    letter-spacing: -0.1vw;
+}
+.cont .overlay{
+    width: 100%;
+    position: absolute;
+    height: 150px;
+    /* background-color: orange; */
+     background-color: #f54927;
+    top: -100%;
+    left: 0%;
+    transition: all ease .3s;
+    z-index: 10;
+}
+.cont:hover .overlay{
+    top: 0;
+    color: white;
+}
+
+#fixed-image{
+    width: 22vw;
+    height: 28vw;
+    /* background-color: #FE320A; */
+    position: fixed;
+    z-index: 999;
+    left: 45vw;
+    top: 10vw;
+    display: none;
+   background-size:cover ;
+   border-radius: 10%;
+   background-position: cover;
+   
+}
+/* .page7{
+    height: 30%;
+    width: 100%;
+    /* background-color: transparent; */
+    background-color: #EFEAE3;
+} */
